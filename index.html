@@ -18,14 +18,13 @@
         <input
           type="image"
           src="imgs/logos/view-dashboard.svg"
-          alt="#"
           id="dashboard"
         />
-        <label class="dashboard-text" for="dashboard">
+        <label class="dashboard-text">
           <a href="#" class="daskboard link">Dashboard</a></label
         >
       </div>
-      <div class="sidebar-main">
+      <div class="sidebar-main-links">
         <ul>
           <li class="home-link"><a href="#" class="link">Home</a></li>
           <li class="profile-link"><a href="#" class="link">Profile</a></li>
@@ -37,7 +36,7 @@
           </li>
         </ul>
       </div>
-      <div class="sidebar-setting">
+      <div class="sidebar-setting-links">
         <ul>
           <li class="settings-link"><a href="#" class="link">Settings</a></li>
           <li class="support-link"><a href="#" class="link">Support</a></li>
@@ -47,8 +46,10 @@
     </div>
     <div class="header">
       <div class="header-top">
-        <input type="image" src="/imgs/logos/magnify.svg" alt="search-button" />
-        <input type="text" name="search" id="search" />
+        <div class="header-search-container">
+          <input type="image" src="/imgs/logos/magnify.svg" class="search-button"/>
+          <input type="text" class="header-search" />
+        </div>
         <div class="header-profile-container">
           <input
             type="image"
@@ -66,24 +67,28 @@
         </div>
       </div>
       <div class="header-bottom">
-        <input
-          type="image"
-          src="imgs/pfp/coolcat.jpg"
-          alt="profile picture"
-          class="profile-picture"
-        />
-        <div class="header-greeting">
-          <p class="header-greeting-small">Hi there,</p>
-          <p class="header-greeting-big">Morgan Oakley (@morgan)</p>
+        <div class="header-bottom-left-container">
+          <input
+            type="image"
+            src="imgs/pfp/coolcat.jpg"
+            alt="profile picture"
+            class="profile-picture"
+          />
+          <div class="header-greeting">
+            <p class="header-greeting-small">Hi there,</p>
+            <p class="header-greeting-big">Morgan Oakley (@morgan)</p>
+          </div>
         </div>
-        <button class="header-button" type="button">New</button>
-        <button class="header-button" type="button">Upload</button>
-        <button class="header-button" type="button">Share</button>
+        <div class="header-bottom-right-container">
+          <button class="header-button" type="button">New</button>
+          <button class="header-button" type="button">Upload</button>
+          <button class="header-button" type="button">Share</button>
+        </div>
       </div>
     </div>
     <div class="main-content">
       <div class="projects">
-        <p class="main-header">Your Projects</p>
+        <p class="projects-header">Your Projects</p>
         <div class="project-container">
           <div class="project-card">
             <h2>Super Cool Project</h2>
@@ -93,7 +98,7 @@
               ipsam doloremque commodi provident obcaecati voluptas tenetur
               autem.
             </p>
-            <div class="card-buttons">
+            <div class="project-card-buttons">
               <img src="#" alt="#" />
               <img src="#" alt="#" />
               <img src="#" alt="#" />
@@ -107,7 +112,7 @@
               ipsam doloremque commodi provident obcaecati voluptas tenetur
               autem.
             </p>
-            <div class="card-buttons">
+            <div class="project-card-buttons">
               <img src="#" alt="#" />
               <img src="#" alt="#" />
               <img src="#" alt="#" />
@@ -121,7 +126,7 @@
               ipsam doloremque commodi provident obcaecati voluptas tenetur
               autem.
             </p>
-            <div class="card-buttons">
+            <div class="project-card-buttons">
               <img src="#" alt="#" />
               <img src="#" alt="#" />
               <img src="#" alt="#" />
@@ -135,7 +140,7 @@
               ipsam doloremque commodi provident obcaecati voluptas tenetur
               autem.
             </p>
-            <div class="card-buttons">
+            <div class="project-card-buttons">
               <img src="#" alt="#" />
               <img src="#" alt="#" />
               <img src="#" alt="#" />
@@ -149,7 +154,7 @@
               ipsam doloremque commodi provident obcaecati voluptas tenetur
               autem.
             </p>
-            <div class="card-buttons">
+            <div class="project-card-buttons">
               <img src="#" alt="#" />
               <img src="#" alt="#" />
               <img src="#" alt="#" />
@@ -163,7 +168,7 @@
               ipsam doloremque commodi provident obcaecati voluptas tenetur
               autem.
             </p>
-            <div class="card-buttons">
+            <div class="project-card-buttons">
               <img src="#" alt="#" />
               <img src="#" alt="#" />
               <img src="#" alt="#" />
