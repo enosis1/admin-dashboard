@@ -165,13 +165,22 @@ body {
 
 .projects {
   grid-row: 1 / 3;
+}
+
+.project-container {
   display: grid;
-  gap: 30px;
-  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 25px;
 }
 
 .project-card {
-  width: 100px;
+}
+
+.project-card,
+.announcements,
+.trending-container {
+  border-radius: 15px;
   background-color: white;
 }
 
