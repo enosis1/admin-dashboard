@@ -160,7 +160,13 @@ body {
   grid-column: 2 / 3;
   
   display: grid;
+  gap: 10px;
+  padding: 20px;
   grid-template-columns: 2fr 1fr;
+}
+
+.main-header {
+  font-weight: bold;
 }
 
 .projects {
@@ -171,17 +177,22 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: 1fr;
-  gap: 25px;
+  gap: 10px;
+
 }
 
-.project-card {
+.project-card-header {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .project-card,
-.announcements,
+.announcements-container,
 .trending-container {
   border-radius: 15px;
   background-color: white;
+  padding: 20px;
+  margin: 10px 10px 10px 0;
 }
 
 .trending-avatar {
