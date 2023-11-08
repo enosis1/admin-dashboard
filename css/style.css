@@ -13,9 +13,11 @@ body {
 
 /* Side Bar */
 .sidebar {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
   grid-row: 1 / 3;
+  display: grid;
+  grid-template-rows: 0fr 0fr 0fr;
+  gap: 40px;
+  padding-left: 20px;
 }
 
 .sidebar,
@@ -23,8 +25,17 @@ body {
   background-color: #4b5563;
 }
 
+.link {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
 .sidebar-logo {
-  display: flex;
+  display: grid;
+  padding-top: 20px;
+  grid-template-columns: 0fr 1fr;
   align-items: center;
 }
 
@@ -37,8 +48,22 @@ body {
 }
 
 .link {
-  text-decoration: none;
   color: white;
+  list-style-type: none;
+}
+
+.link-image {
+  width: 2rem;
+}
+
+ul {
+  display: grid;
+}
+
+a {
+  margin: 0;
+  color: white;
+  text-decoration: none;
 }
 
 /* Header */
@@ -192,7 +217,7 @@ body {
 
 .projects,
 .announcements,
-.trending{
+.trending {
   display: grid;
   grid-template-rows: 0fr 2fr;
   height: 100%;
