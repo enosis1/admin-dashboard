@@ -226,6 +226,7 @@ a {
 .project-card {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
+  border-left: 8px solid #4b5563;
 }
 
 .project-card-header {
